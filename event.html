@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery — Manu Vidaurre</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body class="body--gallery">
+
+    <!-- Cursor -->
+    <div class="cursor" id="cursor"><span class="cursor-label">VIEW</span></div>
+
+    <!-- Page Transition Overlay -->
+    <div class="page-transition" id="pageTransition">
+        <div class="transition-slice"></div>
+        <div class="transition-slice"></div>
+        <div class="transition-slice"></div>
+        <div class="transition-slice"></div>
+        <div class="transition-slice"></div>
+    </div>
+
+    <!-- Gallery Header -->
+    <header class="gallery-header">
+        <a href="/" class="back-link" id="backLink">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+            <span>Back</span>
+        </a>
+        <div class="gallery-header-info">
+            <h1 class="gallery-title" id="galleryTitle">Event Title</h1>
+            <span class="gallery-count" id="galleryCount">0 photos</span>
+        </div>
+    </header>
+
+    <!-- Photo Grid -->
+    <main class="photo-grid" id="photoGrid">
+        <!-- Populated dynamically from /api/events/:event -->
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+        </button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M15 18l-6-6 6-6"/>
+            </svg>
+        </button>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M9 18l6-6-6-6"/>
+            </svg>
+        </button>
+        <div class="lightbox-content" id="lightboxContent">
+            <!-- Image injected by JS -->
+        </div>
+        <div class="lightbox-counter" id="lightboxCounter"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <span class="footer-copy">&copy; 2026 Manu Vidaurre</span>
+        <span class="footer-sep">&mdash;</span>
+        <span class="footer-tag">All works &amp; images are property of the photographer.</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

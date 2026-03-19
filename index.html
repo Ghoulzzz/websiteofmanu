@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manu Vidaurre | Photography</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cursor -->
+    <div class="cursor" id="cursor"><span class="cursor-label">VIEW</span></div>
+
+    <!-- Page Transition Overlay -->
+    <div class="page-transition" id="pageTransition">
+        <div class="transition-slice"></div>
+        <div class="transition-slice"></div>
+        <div class="transition-slice"></div>
+        <div class="transition-slice"></div>
+        <div class="transition-slice"></div>
+    </div>
+
+    <!-- Page Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <span class="loader-line">MANU VIDAURRE</span>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+            <span class="loader-line-sub">PHOTOGRAPHY</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <a href="/" class="header-name">Manu Vidaurre</a>
+        <span class="header-tag">Photography Portfolio</span>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <!-- Event Grid -->
+        <section class="events" id="events">
+            <div class="events-grid" id="eventsGrid">
+                <!-- Populated dynamically from /api/events -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <span class="footer-copy">&copy; 2026 Manu Vidaurre</span>
+        <span class="footer-sep">&mdash;</span>
+        <span class="footer-tag">All works &amp; images are property of the photographer.</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

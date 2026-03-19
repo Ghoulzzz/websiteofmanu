@@ -1,0 +1,19 @@
+{
+  "name": "manu-vidaurre-photography",
+  "version": "1.0.0",
+  "description": "Manu Vidaurre - Photography Portfolio",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "photography",
+    "portfolio"
+  ],
+  "author": "Manu Vidaurre",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
