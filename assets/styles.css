@@ -726,9 +726,11 @@ body::after {
     .events-grid {
         grid-template-columns: 1fr;
     }
-    .event-cover-img,
+    .event-cover-img {
+        aspect-ratio: 5 / 3;
+    }
     .event-placeholder {
-        padding-bottom: 80%;
+        padding-bottom: 60%;
     }
     .event-info {
         padding: 0.9rem 1rem;
@@ -739,4 +741,9 @@ body::after {
     .gallery-title {
         font-size: 1rem;
     }
+
+    /* Per-event cover positioning on mobile */
+    [data-event="event3"] .event-cover-img { object-position: center 30%; }
+    [data-event="event4"] .event-cover-img { object-position: center 60%; }
+    [data-event="event6"] .event-cover-img { object-position: center 45%; }
 }

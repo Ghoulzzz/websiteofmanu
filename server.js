@@ -9,9 +9,14 @@ const ASSETS = path.join(__dirname, 'assets');
 var coverOverrides = {
     'event1': 'IMG_0491.jpg',
     'event2': 'IMG_1792.jpg',
+    'event3': 'IMG_7404.jpg',
     'event4': 'IMG_2982.jpg',
     'event5': 'IMG_3311.jpg',
     'event6': '100_3009.jpg'
+};
+
+var nameOverrides = {
+    'event6': 'Digitals'
 };
 
 app.get('/api/events', function (req, res) {
@@ -34,7 +39,7 @@ app.get('/api/events', function (req, res) {
             var cover = coverOverrides[dir] || files[0] || null;
             return {
                 slug: dir,
-                name: 'Event ' + (i + 1),
+                name: nameOverrides[dir] || ('Event ' + (i + 1)),
                 count: files.length,
                 cover: cover
             };
