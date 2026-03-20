@@ -114,7 +114,7 @@ app.get('*', function (req, res) {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-var PORT = process.env.PORT || 3000 ;
+var PORT = process.env.PORT || 3000;
 app.listen(PORT, function () {
     console.log('Manu Vidaurre Photography running at http://localhost:' + PORT);
 });
