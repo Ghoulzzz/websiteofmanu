@@ -9,10 +9,10 @@ const ASSETS = path.join(__dirname, 'assets');
 var coverOverrides = {
     'event1': 'IMG_0491.jpg',
     'event2': 'IMG_1792.jpg',
-    'event3': 'IMG_7404.jpg',
+    'event3': 'IMG_7404.JPG',
     'event4': 'IMG_2982.jpg',
     'event5': 'IMG_3311.jpg',
-    'event6': '100_3009.jpg'
+    'event6': '100_3009.JPG'
 };
 
 var nameOverrides = {
